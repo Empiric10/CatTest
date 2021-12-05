@@ -22,7 +22,7 @@ class CatsViewModel {
     }
     
     func documentDirectoryPath() -> URL? {
-        let path = FileManager.default.urls(for: .documentDirectory,
+        let path = FileManager.default.urls(for: .downloadsDirectory,
                                             in: .userDomainMask)
         return path.first
     }
